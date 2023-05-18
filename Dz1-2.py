@@ -33,7 +33,7 @@ class Cat:
         self.radist+=1
         self.food += 6
     def OKNO(self):
-        print("🧳ГОДИННА ДЛЯ СТРИБКА у ФОРТОЧКУ🧳")
+        print("🧳ЧАС ДЛЯ СТРИБКА у ФОРТОЧКУ🧳")
         self.radist=0
         self.pregress=0
         self.food =0
@@ -52,10 +52,10 @@ class Cat:
             print(f"{self.name} помер, бо його не кормили! Поганий женя, поганий!")
             self.life=False
     def dayoff(self):
-        print(f"У {self.name} радість = {self.radist},а прогресс {self.pregress}")
+        print(f"У {self.name} радість = {self.radist},наточиність кігтів {self.pregress}, голод {self.food}")
     def simmulate(self):
-        rnd=random.randint(1,50)
-        if(rnd<=40):
+        rnd=random.randint(1,100)
+        if(rnd<=90):
             rndd=random.randint(1,5)
             if rndd==1:
                 self.study()
@@ -74,7 +74,7 @@ class Cat:
             self.dayoff()
             self.check()
 catt=Cat()
-for i in range(10):
+for i in range(50):
     catt.simmulate()
     if catt.life==False:
         break
