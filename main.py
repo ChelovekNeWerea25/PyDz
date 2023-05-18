@@ -1,0 +1,2 @@
+#ff
+print("lol")
